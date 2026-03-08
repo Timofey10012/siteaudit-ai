@@ -1,34 +1,31 @@
-async function pingBackend() {
-  try {
-    const start = Date.now();
-    
-    const response = await fetch('https://your-backend.com/api/ping', {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-    
-    const end = Date.now();
-    const latency = end - start;
-    
-    if (response.ok) {
-      const data = await response.json();
-      console.log('Ping успешен!', data);
-      console.log(`Задержка: ${latency}ms`);
-      return { success: true, latency, data };
-    } else {
-      throw new Error('Сервер вернул ошибку');
+// Функция для отправки ping
+async function pingServer() {
+    const url = 'http://your-server.com:8080/api/ping'; // Адрес вашего бэкенда
+
+    try {
+        const response = await fetch(url, {
+            method: 'GET', // Или 'POST', в зависимости от вашего endpoint'а
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            console.log('Ping успешен:', data);
+            // Здесь можно обновить UI, например, зажечь зеленую лампочку
+            document.getElementById('status').innerText = 'Сервер доступен';
+        } else {
+            console.error('Ошибка HTTP:', response.status);
+            document.getElementById('status').innerText = 'Ошибка соединения';
+        }
+    } catch (error) {
+        // Сработает при сетевой ошибке (сервер недоступен, CORS-проблемы и т.д.)
+        console.error('Сетевая ошибка или сервер не отвечает:', error);
+        document.getElementById('status').innerText = 'Сервер недоступен';
     }
-  } catch (error) {
-    console.error('Ping не удался:', error);
-    return { success: false, error: error.message };
-  }
 }
 
-// Использование
-pingBackend().then(result => {
-  if (result.success) {
-    console.log(`Сервер отвечает за ${result.latency}ms`);
-  }
-});
+// Вызвать функцию можно по таймеру или при загрузке страницы
+setInterval(pingServer, 30000); // Пинговать каждые 30 секунд
+// pingServer(); // Или один раз при загрузке
