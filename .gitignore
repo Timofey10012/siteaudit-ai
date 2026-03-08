@@ -138,24 +138,34 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
-# C++ build files
-build/
-cmake-build-debug/
-cmake-build-release/
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.VC.db
+*.opendb
+*.suo
 
-*.o
-*.obj
-*.exe
-*.out
-*.a
-*.so
-*.dll
+# Build folders
+Debug/
+Release/
+x64/
+x86/
+build/
+out/
 
 # CMake
 CMakeFiles/
 CMakeCache.txt
-cmake_install.cmake
-Makefile
+cmake-build-*/
+compile_commands.json
 
-# VCPKG
+# C++ build artifacts
+*.obj
+*.exe
+*.dll
+*.lib
+*.pdb
+*.ilk
+
+# vcpkg
 vcpkg/
