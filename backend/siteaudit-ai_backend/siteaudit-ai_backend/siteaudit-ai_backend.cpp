@@ -5,7 +5,7 @@
 
 int main()
 {
-    crow::App<CORSMiddleware> app;
+    crow::App<> app;
 
     CROW_ROUTE(app, "/<path>").methods(crow::HTTPMethod::Options)(
         [](std::string path) {
