@@ -1,25 +1,30 @@
   body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    background-image: url('image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #333;
   }
 
   header {
-    background: linear-gradient(90deg, #7b2ff7, #f107a3);
+    background: linear-gradient(90deg, #8b92f1, #6e33db);
     padding: 40px 20px;
     text-align: center;
     color: white;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   }
 
-  h1 {
+  h3 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2em;
     letter-spacing: 2px;
+    text-align: center;
   }
 
-  main {
+  .main_block {
     max-width: 900px;
     margin: 30px auto;
     padding: 20px;
@@ -29,8 +34,19 @@
     transition: transform 0.3s ease;
   }
 
-  main:hover {
-    transform: translateY(-10px);
+  .main_block:hover {
+    transform: translateY(-5px);
+  }
+
+  .second_block {
+    max-width: 900px;
+    height: 350px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+
   }
 
   p {
@@ -49,3 +65,28 @@
     width: 100%;
     font-size: 1em;
   }
+
+  .img_logo {
+    position: fixed;    /* фиксирует элемент относительно окна браузера */
+    top: 20px;          /* отступ сверху */
+    left: 20px;        /* отступ справа */
+    z-index: 999;
+  }
+
+  .img_logo img {
+    width: 100px;       /* задайте нужный размер */
+    height: auto;        /* сохраняет пропорции */
+}
+
+.inp {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px 0;
+    font-size: 16px;
+    color: #333;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ff0000;
+    transition: border-color 0.3s;
+}
+
