@@ -13,10 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Файлы заголовков\server">
+      <UniqueIdentifier>{665dc4b5-a95c-4522-a309-803cb4777cb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\server">
+      <UniqueIdentifier>{9f673731-3e89-41f7-862b-65923b72e6f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\controller">
+      <UniqueIdentifier>{e591043c-1046-4b59-b9d1-873ac5e96756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\controller">
+      <UniqueIdentifier>{55556324-1c85-4d11-b2ee-e008112bb728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\common">
+      <UniqueIdentifier>{83553795-1d74-47e4-aa42-67dfc435324a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="siteaudit-ai_backend.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="server.cpp">
+      <Filter>Исходные файлы\server</Filter>
+    </ClCompile>
+    <ClCompile Include="controller.cpp">
+      <Filter>Исходные файлы\controller</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="server.h">
+      <Filter>Файлы заголовков\server</Filter>
+    </ClInclude>
+    <ClInclude Include="controller.h">
+      <Filter>Файлы заголовков\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="errors.h">
+      <Filter>Файлы заголовков\common</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
