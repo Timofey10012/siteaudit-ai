@@ -14,6 +14,8 @@
 ```bash
 git clone --recursive https://github.com/Timofey10012/siteaudit-ai.git
 ```
+Примечание: для сборки рекомендуется использовать x64 Native Tools Command Prompt for Visual Studio (MSVC toolchain).
+
 ```
 cd SiteAudit-AI
 ```
