@@ -14,6 +14,10 @@
 ```bash
 git clone --recursive https://github.com/Timofey10012/siteaudit-ai.git
 ```
+
+### Установить переменные окружения (глобально).
+Пример строки подключения есть в .env.example.
+
 Примечание: для сборки рекомендуется использовать x64 Native Tools Command Prompt for Visual Studio (MSVC toolchain).
 
 ```
