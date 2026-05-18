@@ -29,3 +29,12 @@ cmake --preset default
 ```
 cmake --build --preset default
 ```
+
+Собранный .exe находится в папке build/.
+
+Запуск:
+```
+./build/ai_ux_auditor_backend.exe
+```
+
+### Фронт не требует сборки. Просто откройте файл frontend/welcomToTheHELL.html в браузере.
