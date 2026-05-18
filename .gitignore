@@ -33,7 +33,6 @@ CMakeUserPresets.json
 
 # Vcpkg
 
-vcpkg/
 vcpkg_installed/
 vcpkg/downloads/
 vcpkg/packages/
