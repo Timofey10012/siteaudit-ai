@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков\server">
+      <UniqueIdentifier>{665dc4b5-a95c-4522-a309-803cb4777cb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\server">
+      <UniqueIdentifier>{9f673731-3e89-41f7-862b-65923b72e6f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\controller">
+      <UniqueIdentifier>{e591043c-1046-4b59-b9d1-873ac5e96756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\controller">
+      <UniqueIdentifier>{55556324-1c85-4d11-b2ee-e008112bb728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\common">
+      <UniqueIdentifier>{83553795-1d74-47e4-aa42-67dfc435324a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\service">
+      <UniqueIdentifier>{abaa8160-d1dd-4d3f-b218-a3a88065f143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\service">
+      <UniqueIdentifier>{080070df-e12f-49e2-ba5d-7f08b5a230c0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="siteaudit-ai_backend.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="controller\controller.cpp">
+      <Filter>Исходные файлы\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="server\server.cpp">
+      <Filter>Исходные файлы\server</Filter>
+    </ClCompile>
+    <ClCompile Include="service\ai_service.cpp">
+      <Filter>Исходные файлы\service</Filter>
+    </ClCompile>
+    <ClCompile Include="service\analyze_service.cpp">
+      <Filter>Исходные файлы\service</Filter>
+    </ClCompile>
+    <ClCompile Include="service\scraper_service.cpp">
+      <Filter>Исходные файлы\service</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="controller\controller.h">
+      <Filter>Файлы заголовков\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="server\server.h">
+      <Filter>Файлы заголовков\server</Filter>
+    </ClInclude>
+    <ClInclude Include="service\ai_service.h">
+      <Filter>Файлы заголовков\service</Filter>
+    </ClInclude>
+    <ClInclude Include="service\analyze_service.h">
+      <Filter>Файлы заголовков\service</Filter>
+    </ClInclude>
+    <ClInclude Include="service\scraper_service.h">
+      <Filter>Файлы заголовков\service</Filter>
+    </ClInclude>
+    <ClInclude Include="common\errors.h">
+      <Filter>Файлы заголовков\common</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
